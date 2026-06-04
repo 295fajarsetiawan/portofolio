@@ -1,5 +1,5 @@
+import { CheckCircle2, Github, Mail, Phone, Send, ShieldCheck, Terminal } from "lucide-react";
 import React, { useState } from "react";
-import { Mail, Phone, Github, Send, Terminal, ShieldCheck, CheckCircle2 } from "lucide-react";
 
 interface ContactProps {
   isDarkMode: boolean;
@@ -28,7 +28,7 @@ export default function Contact({ isDarkMode, onCopyAction }: ContactProps) {
       "Mengompres data pesan (Gzip codec)...",
       "Mengenkripsi isi pesan dengan AES-256...",
       "Memasukkan ke dalam antrean RabbitMQ (routing_key: contact_inbox)...",
-      "Pesan berhasil terkirim ke fajarsetiawan295@gmail.com!"
+      "Pesan berhasil terkirim ke 295fajarsetiawan@gmail.com!"
     ];
 
     logs.forEach((logLine, index) => {
@@ -97,7 +97,7 @@ export default function Contact({ isDarkMode, onCopyAction }: ContactProps) {
 
             {/* Email send card */}
             <a
-              href="mailto:fajarsetiawan295@gmail.com?subject=Tawaran Kerjasama / Konsultasi TI&body=Halo Fajar,"
+              href="mailto:295fajarsetiawan@gmail.com?subject=Tawaran Kerjasama / Konsultasi TI&body=Halo Fajar,"
               className={`group flex items-start space-x-4 rounded border p-5 transition-all hover:border-blue-500/30 ${
                 isDarkMode
                   ? "border-slate-800 bg-[#0a101f] hover:bg-slate-900/40"
@@ -109,7 +109,7 @@ export default function Contact({ isDarkMode, onCopyAction }: ContactProps) {
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[10px] font-bold font-mono uppercase tracking-wider text-blue-500 mb-1">Kirim Email</p>
-                <p className={`text-sm font-bold font-mono ${isDarkMode ? "text-slate-200" : "text-slate-800"}`}>fajarsetiawan295@gmail.com</p>
+                <p className={`text-sm font-bold font-mono ${isDarkMode ? "text-slate-200" : "text-slate-800"}`}>295fajarsetiawan@gmail.com</p>
                 <p className={`text-xs mt-1.5 leading-relaxed font-light ${isDarkMode ? "text-slate-400" : "text-slate-500"}`}>
                   Kirim rincian deskripsi sistem (RFP), dokumen penawaran kontrak, atau penjadwalan interview.
                 </p>
@@ -118,7 +118,7 @@ export default function Contact({ isDarkMode, onCopyAction }: ContactProps) {
 
             {/* GitHub profile card */}
             <a
-              href="https://github.com/fajarsetiawan295"
+              href="https://github.com/295fajarsetiawan"
               target="_blank"
               rel="noopener noreferrer"
               className={`group flex items-start space-x-4 rounded border p-5 transition-all hover:border-blue-500/30 ${
@@ -132,7 +132,7 @@ export default function Contact({ isDarkMode, onCopyAction }: ContactProps) {
               </div>
               <div className="flex-1 min-w-0">
                 <p className="text-[10px] font-bold font-mono uppercase tracking-wider text-blue-500 mb-1">GitHub Repository</p>
-                <p className={`text-sm font-bold font-mono ${isDarkMode ? "text-slate-200" : "text-slate-800"}`}>github.com/fajarsetiawan295</p>
+                <p className={`text-sm font-bold font-mono ${isDarkMode ? "text-slate-200" : "text-slate-800"}`}>github.com/295fajarsetiawan</p>
                 <p className={`text-xs mt-1.5 leading-relaxed font-light ${isDarkMode ? "text-slate-400" : "text-slate-500"}`}>
                   Lihat bukti implementasi code microservices, parsing regex, benchmark engine, dan kontribusi open source.
                 </p>

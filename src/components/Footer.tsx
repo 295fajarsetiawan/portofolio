@@ -1,4 +1,4 @@
-import { Github, Mail, Phone, ArrowUp } from "lucide-react";
+import { ArrowUp, Github, Mail, Phone } from "lucide-react";
 
 interface FooterProps {
   isDarkMode: boolean;
@@ -30,7 +30,7 @@ export default function Footer({ isDarkMode }: FooterProps) {
         <div className="flex items-center space-x-6">
           <div className="flex items-center space-x-3">
             <a
-              href="mailto:fajarsetiawan295@gmail.com"
+              href="mailto:295fajarsetiawan@gmail.com"
               className="hover:text-blue-500 transition-colors"
               title="Mail Fajar"
             >
@@ -46,7 +46,7 @@ export default function Footer({ isDarkMode }: FooterProps) {
               <Phone className="h-4 w-4" />
             </a>
             <a
-              href="https://github.com/fajarsetiawan295"
+              href="https://github.com/295fajarsetiawan"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-blue-400 transition-colors"

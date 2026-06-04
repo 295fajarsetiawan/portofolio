@@ -154,7 +154,7 @@ export const projectsData: Project[] = [
     title: "Portal BNI Singapore",
     description: "Situs resmi portofolio profil perusahaan dan layanan finansial eksklusif BNI Cabang Singapore yang informatif, secure, dan responsif.",
     tech: [".NET Core", "HTML5/CSS3", "JavaScript", "SQL Server"],
-    category: "Desktop / Enterprise",
+    category: "Full-Stack",
     link: "https://www.ptbni.com.sg/",
     featured: false
   },
@@ -162,7 +162,7 @@ export const projectsData: Project[] = [
     title: "Peradi Prof Microservices",
     description: "Infrastruktur microservices modern penyalur portal berita, registrasi anggota advokat, dan administrasi database keanggotaan terintegrasi.",
     tech: ["Golang GRPC", "Next.js", "PostgreSQL", "Tailwind CSS"],
-    category: "System / Devops",
+    category: "Full-Stack",
     link: "https://peradiprof.or.id/",
     featured: false
   },

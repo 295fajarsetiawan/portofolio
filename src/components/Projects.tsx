@@ -1,6 +1,6 @@
+import { ArrowUpRight, CheckCircle2, ExternalLink, Layers } from "lucide-react";
+import { Project, projectsData } from "../data";
 import React, { useState } from "react";
-import { projectsData, Project } from "../data";
-import { ExternalLink, Layers, ArrowUpRight, CheckCircle2 } from "lucide-react";
 
 interface ProjectsProps {
   isDarkMode: boolean;
@@ -13,8 +13,6 @@ export default function Projects({ isDarkMode }: ProjectsProps) {
     "Semua",
     "Full-Stack",
     "Backend",
-    "System / Devops",
-    "Desktop / Enterprise",
   ];
 
   const filteredProjects =

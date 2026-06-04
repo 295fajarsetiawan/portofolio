@@ -1,5 +1,6 @@
+import { ArrowRight, Copy, Github, Mail, MapPin, Phone, ShieldCheck, Terminal as TerminalIcon } from "lucide-react";
+
 import { motion } from "motion/react";
-import { Github, Mail, Phone, MapPin, ArrowRight, Copy, Terminal as TerminalIcon, ShieldCheck } from "lucide-react";
 
 interface HeroProps {
   isDarkMode: boolean;
@@ -142,7 +143,7 @@ export default function Hero({ isDarkMode, onCopyAction }: HeroProps) {
               {/* Email copy tile */}
               <button
                 type="button"
-                onClick={() => onCopyAction("fajarsetiawan295@gmail.com", "Email")}
+                onClick={() => onCopyAction("295fajarsetiawan@gmail.com", "Email")}
                 className={`group flex items-center justify-between rounded border p-3.5 text-left transition-all hover:scale-[1.01] ${
                   isDarkMode
                     ? "border-slate-800 bg-slate-900/60 hover:bg-slate-850 hover:border-blue-500/40 text-white"
@@ -155,7 +156,7 @@ export default function Hero({ isDarkMode, onCopyAction }: HeroProps) {
                   </div>
                   <div className="truncate">
                     <p className="text-[10px] font-medium uppercase tracking-wider text-slate-500">Email Address</p>
-                    <p className="text-xs font-bold font-mono">fajarsetiawan295@gmail.com</p>
+                    <p className="text-xs font-bold font-mono">295fajarsetiawan@gmail.com</p>
                   </div>
                 </div>
                 <Copy className="h-3.5 w-3.5 text-slate-500 group-hover:text-blue-500 shrink-0" />
@@ -163,7 +164,7 @@ export default function Hero({ isDarkMode, onCopyAction }: HeroProps) {
 
               {/* Github link tile */}
               <a
-                href="https://github.com/fajarsetiawan295"
+                href="https://github.com/295fajarsetiawan"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={`group flex items-center justify-between rounded border p-3.5 text-left transition-all hover:scale-[1.01] sm:col-span-2 md:col-span-1 ${
@@ -178,7 +179,7 @@ export default function Hero({ isDarkMode, onCopyAction }: HeroProps) {
                   </div>
                   <div className="truncate">
                     <p className="text-[10px] font-medium uppercase tracking-wider text-slate-500">GitHub Profile</p>
-                    <p className="text-xs font-bold font-mono">fajarsetiawan295</p>
+                    <p className="text-xs font-bold font-mono">295fajarsetiawan</p>
                   </div>
                 </div>
                 <ArrowRight className="h-3.5 w-3.5 text-slate-500 group-hover:text-blue-500 transform group-hover:translate-x-0.5 shrink-0" />

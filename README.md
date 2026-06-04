@@ -1,20 +1,46 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://ai.google.dev/static/site-assets/images/share-ais-513315318.png" />
-</div>
+# Fajar Portfolio
 
-# Run and deploy your AI Studio app
-
-This contains everything you need to run your app locally.
-
-View your app in AI Studio: https://ai.studio/apps/c806ca82-2567-4292-a7e3-02fed177634a
+Portfolio website built with React, TypeScript, Tailwind CSS, and Vite.
 
 ## Run Locally
 
-**Prerequisites:**  Node.js
+Requirements:
 
+- Node.js 22 or newer
+- npm
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm run dev
+```
+
+Build for production:
+
+```bash
+npm run build
+```
+
+Preview the production build:
+
+```bash
+npm run preview
+```
+
+## Deploy to GitHub Pages
+
+This repository includes a GitHub Actions workflow at `.github/workflows/deploy.yml`.
+
+1. Push the project to GitHub.
+2. Open the repository on GitHub.
+3. Go to `Settings` > `Pages`.
+4. Under `Build and deployment`, set `Source` to `GitHub Actions`.
+5. Push to the `main` branch, or run the `Deploy to GitHub Pages` workflow manually from the `Actions` tab.
+
+The Vite base path is configured automatically for GitHub Pages project sites.

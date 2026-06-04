@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "motion/react";
-import { Github, Mail, Phone, Sun, Moon, Menu, X, Copy, Check } from "lucide-react";
+import { AnimatePresence, motion } from "motion/react";
+import { Check, Copy, Github, Mail, Menu, Moon, Phone, Sun, X } from "lucide-react";
+import React, { useEffect, useState } from "react";
 
 interface HeaderProps {
   isDarkMode: boolean;
@@ -55,11 +55,7 @@ export default function Header({ isDarkMode, onToggleTheme, onCopyAction }: Head
             href="#home"
             className="group flex items-center gap-3.5 select-none"
           >
-            <div className={`w-11 h-11 flex items-center justify-center font-bold text-lg text-white rounded-lg transition-transform group-hover:scale-105 duration-250 ${
-              isDarkMode ? "bg-blue-600" : "bg-blue-600"
-            }`}>
-              FS
-            </div>
+            
             <div className="flex flex-col text-left">
               <span className={`text-lg font-extrabold tracking-tight uppercase leading-none ${
                 isDarkMode ? "text-white" : "text-slate-900"
@@ -98,16 +94,16 @@ export default function Header({ isDarkMode, onToggleTheme, onCopyAction }: Head
             {/* Quick Email */}
             <div className="relative group">
               <button
-                onClick={() => handleCopyHeader("fajarsetiawan295@gmail.com", "Email")}
+                onClick={() => handleCopyHeader("295fajarsetiawan@gmail.com", "Email")}
                 className={`flex items-center space-x-1.5 rounded bg-slate-900/50 p-6 rounded-xl border px-3 py-1.5 text-xs font-mono transition-all ${
                   isDarkMode
                     ? "border-slate-800 bg-slate-950/40 text-slate-300 hover:border-slate-700 hover:bg-slate-900"
                     : "border-slate-200 bg-slate-100 text-slate-700 hover:border-slate-300 hover:bg-slate-200"
                 }`}
-                title="Salin fajarsetiawan295@gmail.com"
+                title="Salin 295fajarsetiawan@gmail.com"
               >
                 <Mail className={`h-3.5 w-3.5 ${isDarkMode ? "text-blue-400" : "text-blue-600"}`} />
-                <span className="text-[11px]">fajarsetiawan295@gmail.com</span>
+                <span className="text-[11px]">295fajarsetiawan@gmail.com</span>
                 {copiedHeaderItem === "Email" ? (
                   <Check className="h-3.5 w-3.5 text-emerald-500" />
                 ) : (
@@ -137,7 +133,7 @@ export default function Header({ isDarkMode, onToggleTheme, onCopyAction }: Head
 
             {/* Quick GitHub Links */}
             <a
-              href="https://github.com/fajarsetiawan295"
+              href="https://github.com/295fajarsetiawan"
               target="_blank"
               rel="noopener noreferrer"
               className={`rounded p-1.5 border transition-all ${
@@ -220,7 +216,7 @@ export default function Header({ isDarkMode, onToggleTheme, onCopyAction }: Head
                 
                 <button
                   onClick={() => {
-                    handleCopyHeader("fajarsetiawan295@gmail.com", "Email");
+                    handleCopyHeader("295fajarsetiawan@gmail.com", "Email");
                     setIsMobileMenuOpen(false);
                   }}
                   className={`flex items-center space-x-2 text-xs font-mono text-left ${
@@ -228,7 +224,7 @@ export default function Header({ isDarkMode, onToggleTheme, onCopyAction }: Head
                   }`}
                 >
                   <Mail className="h-4 w-4 text-blue-500 shrink-0" />
-                  <span className="truncate">fajarsetiawan295@gmail.com</span>
+                  <span className="truncate">295fajarsetiawan@gmail.com</span>
                 </button>
 
                 <button
@@ -245,7 +241,7 @@ export default function Header({ isDarkMode, onToggleTheme, onCopyAction }: Head
                 </button>
 
                 <a
-                  href="https://github.com/fajarsetiawan295"
+                  href="https://github.com/295fajarsetiawan"
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setIsMobileMenuOpen(false)}
@@ -254,7 +250,7 @@ export default function Header({ isDarkMode, onToggleTheme, onCopyAction }: Head
                   }`}
                 >
                   <Github className="h-4 w-4 text-blue-400 shrink-0" />
-                  <span>github.com/fajarsetiawan295</span>
+                  <span>github.com/295fajarsetiawan</span>
                 </a>
               </div>
             </div>
